@@ -10,6 +10,8 @@ html,
 body {
    font-family: $font;
     font-size: 16px;
+    padding:0;
+    margin: 0;
     
 }
 
@@ -103,5 +105,67 @@ header {
             }
 
         }
+        .main-image {
+            width: 536px;
+            margin: 0 auto;
+            position: relative;
+            left: -5.5%; 
+            margin-top: 50px;
+            @media (max-width: 1440px) {
+                width: 436px;
+            }
+        }
+
+        .side-image-left {
+            img {
+              max-width: 50%; 
+              max-height: 100%; 
+              object-fit: contain; 
+              margin-top: 120px;
+              margin-left: -1%;
+            }
+
+        }
+       
+
+        .side-image-right {
+            img {
+              max-width: 79%; 
+              max-height: 100%; 
+              object-fit: contain; 
+              position: relative;
+              margin-top: 250px;
+              margin-left: 30%;
+            }
+
+        }
+    }
+    .scroll {
+        font-weight: 700;
+        font-size: .875rem;
+        letter-spacing: 1.5px;
+        color: $black;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 48px;
+    }
+
+    .fixed-misc {
+        position: fixed;
+        top: 50%;
+        right: -48px;
+        transform: rotate(-90deg);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .875 rem;
+        letter-spacing: 1.5px;
+        color:#fff;
+        mix-blend-mode: difference;
+        z-index: 8;
+        @media (max-width: 1440px){
+            right: -112px;
+        }
+
+
     }
 }

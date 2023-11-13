@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const UsingSSR = ({ serverData }) => {
   return (
-    <Layout>
+    <>
       <h1>
         This page is <b>rendered server-side</b>
       </h1>
@@ -27,11 +27,11 @@ const UsingSSR = ({ serverData }) => {
         .
       </p>
       <Link to="/">Go back to the homepage</Link>
-    </Layout>
+    </>
   )
 }
 
-export const Head = () => <Seo title="Using SSR" />
+// export const Head = () => <Seo title="Using SSR" />
 
 export default UsingSSR
 

@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 const Image = () => {
     const data = useStaticQuery(graphql`
         query {
-            placeholderImage: file(relativePath: { eq: "C:/Windows/System32/code/src/images/example.png" }) {
+            placeholderImage: file(relativePath: { eq: "src/images/flowers.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 300) {
                         ...GatsbyImageSharpFluid
@@ -16,6 +16,7 @@ const Image = () => {
     `);
 
     console.log(data);
+    
 
     if (!data.placeholderImage) {
         return <div>Bild nicht gefunden</div>;
